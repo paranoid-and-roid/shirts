@@ -1,0 +1,86 @@
+<h2>Contact Us</h2>
+
+<form action="nailto:yorko99@yahoo.ie" method="POST" #f="ngForm" (ngSubmit)="submit(f)">
+<div class="form-group">
+    <label for="fullName">Name</label>
+    <input
+        required
+        ngModel name = "fullName"
+        #fullName="ngModel"
+        id="fullName"
+        type="text"
+        class="form-control"
+    >
+    <div
+        class="alert"
+        *ngIf="fullName.touched && !fullName.valid">
+        <div *ngIf="fullName.errors.required">
+            Please enter your name
+        </div>
+    </div>
+</div>
+<div 
+    class="form-group">
+    <label for="email">Email</label>
+    <input 
+        required
+        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+        ngModel name="email"
+        #email="ngModel"
+        id="email"
+        type="text"
+        class="form-control"
+    >
+    <div 
+        class="alert"
+        *ngIf="email.touched && !email.valid">
+        <div *ngIf="email.errors.required">
+            Please enter a valid email address
+        </div>
+    </div>
+</div>
+<div
+    class="form-group"
+    >
+    <label for="phone">Phone</label>
+    <input 
+        required
+        pattern="[0-9]+"
+        ngModel name="phone"
+        #phone="ngModel"
+        id="phone"
+        type="text" 
+        class="form-control"
+    >
+    <div 
+        class="alert"
+        *ngIf="phone.touched && !phone.valid">
+        <div *ngIf="phone.errors.required">
+            Please enter a valid phone number
+        </div>
+    </div>
+</div>
+<div 
+    class="form-group"
+    >
+    <label for="query">Query</label>
+    <input 
+    required
+    ngModel name="query"
+    #query="ngModel"
+    id="query"
+    type="textarea" 
+    class="form-control"
+    >
+    <div 
+        class="alert"
+        *ngIf="query.touched && !query.valid">
+        <div *ngIf="query.errors.required">
+            Your query is too short
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-primary">Send</button>
+
+</form>

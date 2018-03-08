@@ -1,0 +1,32 @@
+.fixed {
+    width: 960px;
+    position: fixed;
+    top: 0;
+    background: #fff;   
+  }
+.nav {
+    width: 80%;
+    float: left;
+}
+.nav-link {
+    color: inherit;
+}
+.contact {
+    width: 20%;
+    float: right;
+}
+.contact img {
+    float: left;
+    margin-right: 20px;
+}
+
+.banner {
+    width: 100%;
+    max-width: 960px; 
+    margin-top: 150px;   
+}
+
+.footer {
+    text-align: center;
+    background: pink
+}

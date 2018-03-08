@@ -1,0 +1,29 @@
+products {
+    margin-bottom: 150px;
+}
+.payment {
+    height: 60px;
+    width: 960px;    
+}
+.payment img {
+    float: left;
+}
+.productlistgrid li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;;
+}
+.product_thumb img {
+    width: 280px;    
+}
+span {
+    padding-bottom: 100px;
+}
+.productlistgrid {
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+}
+.product_name a {    
+    color: #333;
+}

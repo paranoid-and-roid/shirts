@@ -1,0 +1,16 @@
+.form-group {
+    width: 70%;
+}
+
+.form-control.ng-touched.ng-invalid {
+    border: 3px solid red;
+    background: #fff7f8;
+}
+
+.alert {
+    color: red;
+}
+label {
+    display: block;
+    font-weight: bold;
+}

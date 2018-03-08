@@ -1,0 +1,19 @@
+<div class="payment">
+        <img src="././assets/images/payment-visa48.png" alt="">
+        <img src="././assets/images/payment-mastercard48.png" alt="">
+        <img src="././assets/images/payment-paypal48.png" alt="">       
+</div>
+
+<h2>Make a statement</h2>
+
+<p><strong>Welcome to BROADHURST CLOTHING, come and take a journey with us through are collection of Funky, Vibrante T-Shirts</strong></p>
+
+<p>Sales Email: broadhurstcc@gmail.com</p>
+
+<ul class="productlistgrid">
+        <li *ngFor="let product of products">
+                <div class="product_thumb"><a href=""><img src="././assets/images/{{ product.img_src }}" alt="{{ product.name }}"></a></div>
+                        <span class="product_name"><a href="">{{ product.name }}</a></span><br>
+                        <span class="product_cost">{{ product.price | currency:'€' }}</span>
+        </li>
+</ul>
